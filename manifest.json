@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "customFacebookEmojiAddon",
+  "version": "1.0",
+
+  "description": "Replaces the messenger chat emoji",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["changeEmoji.js"]
+    }
+  ]
+
+}
